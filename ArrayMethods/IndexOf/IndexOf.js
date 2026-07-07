@@ -2,7 +2,7 @@ let colours = [];
 function onClickPushArray() {
     debugger;
     let colourname = document.getElementById("txtColour").value;
-    fabrics.push(colourname);
+    colours.push(colourname);
     let i = 0;
     let content = "";
     while (i < colours.length) {
@@ -10,14 +10,14 @@ function onClickPushArray() {
         i++;
     }
     document.getElementById("divPush").innerHTML = content;
-    document.getElementById("txtFabric").value = "";
+    document.getElementById("txtColour").value = "";
 }
 
 function onClickIndexOf() {
-    let colourname = document.getElementById("txtFabric").value;
     let searchWord = document.getElementById("txtWord").value;
     if(colours.indexOf(searchWord)){
-        document.getElementById("divIndexOf").innerHTML = The word
+        document.getElementById("divIndexOf").innerHTML = `The ${searchWord} is at ${colours.indexOf(searchWord)} `;
+    }else{
+     document.getElementById("divIndexOf").innerHTML = `The ${searchWord} is not at ${colours.indexOf(searchWord)}`;   
     }
-  
 }

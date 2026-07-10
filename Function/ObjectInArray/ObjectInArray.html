@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Objects are in Array</title>
+    <script src="ObjectInArray.js" defer></script>
+</head>
+
+<body>
+    <h1>Fruits Details</h1>
+    <label for="lblID">Enter your Id:</label>
+    <input id="txtId" type="text" placeholder="Enter your Id"><br>
+    <label for="lblFruitName">Fruit Name:</label>
+    <input id="txtFruitName" type="text" placeholder="Enter your Fruit Name" required><br>
+    <label for="lblCategory">Category:</label>
+    <select id="Category" required>
+        <option value="">-Select your Category-</option>
+        <option value="local">Local</option>
+        <option value="hybrid">Hybrid</option>
+    </select><br>
+    <label for="lblExportedCountry">Exported Country:</label>
+    <select id="Country" required>
+        <option value="">-Select the Country</option>
+        <option value="India">India</option>
+        <option value="America">America</option>
+        <option value="Austrila">Austrila</option>
+        <option value="Japan">Japan</option>
+        <option value="Chaina">Chaina</option>
+        <option value="Nepal">Nepal</option>
+    </select><br>
+    <label for="lblState">Exported State:</label>
+    <select id="State" required>
+        <option value="">-Select the State-</option>
+        <option value="Andhra">Andhra Pradesh</option>
+        <option value="Telangana">Telangana</option>
+        <option value="Kerala">Kerala</option>
+        <option value="Tamil">Tamil Nadu</option>
+        <option value="Maharastra">Maharastra</option>
+    </select><br>
+    <label for="lblPrice">Price per KGS:</label>
+    <input id="txtPrice" type="text" placeholder="Enter your CostPrice"><br>
+    <label for="lblQuantity">Qauntity per KGS:</label>
+    <input id="txtQuantity" type="text" placeholder="Enter the Qauntity of the Container">
+    <button id="btnSubmit" onclick="onClickFruitsExported()">Submit</button>
+    <div id="divResult"></div>
+</body>
+
+</html>
